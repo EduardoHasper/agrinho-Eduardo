@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto interativo sobre o equilíbrio entre a alta produtividade agrícola e a preservação ambiental.">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header role="banner" class="header-principal">
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio entre produção e meio ambiente através da tecnologia e consciência.</p>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" role="main" class="container">
+        
+        <section class="secao-intro" aria-labelledby="titulo-intro">
+            <h2 id="titulo-intro">Alimentar o Mundo, Proteger a Terra</h2>
+            <p>O grande desafio atual é aumentar a produção de alimentos para uma população em crescimento sem esgotar os recursos naturais. O conceito de <strong>Agro Sustentável</strong> prova que a tecnologia de precisão e o respeito à biodiversidade podem caminhar juntos.</p>
+        </section>
+
+        <section class="secao-pilares" aria-labelledby="titulo-pilares">
+            <h2 id="titulo-pilares">Os Pilares do Equilíbrio</h2>
+            <div class="grid-pilares">
+                <article class="card">
+                    <h3>Tecnologia no Campo</h3>
+                    <p>Uso de drones, sensores IoT e inteligência artificial para aplicação cirúrgica de água e insumos, reduzindo o desperdício a quase zero.</p>
+                </article>
+                <article class="card">
+                    <h3>Preservação Direta</h3>
+                    <p>Rotação de culturas, plantio direto e manutenção de Áreas de Preservação Permanente (APPs) para proteção da fauna e flora nativas.</p>
+                </article>
+                <article class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>Propriedades rurais autossuficientes utilizando matrizes fotovoltaicas e biomassa gerada a partir de resíduos orgânicos reaproveitados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-simulador" aria-labelledby="titulo-simulador">
+            <h2 id="titulo-simulador">Simulador de Impacto Ambiental</h2>
+            <p>Selecione um modelo de manejo agrícola para analisar os impactos projetados na produção e no ecossistema:</p>
+            
+            <div class="botoes-simulador" role="group" aria-label="Opções de práticas agrícolas">
+                <button type="button" class="btn-simulador" data-pratica="tradicional" aria-controls="resultado-simulador">Modelo Convencional Desenfreado</button>
+                <button type="button" class="btn-simulador" data-pratica="tecnologica" aria-controls="resultado-simulador">Tecnologia e Precisão</button>
+                <button type="button" class="btn-simulador" data-pratica="sustentavel" aria-controls="resultado-simulador">Agroecologia Integrada</button>
+            </div>
+
+            <div id="resultado-simulador" class="resultado-box" aria-live="polite" role="region" aria-atomic="true">
+                <p class="placeholder-resultado">Selecione uma das práticas acima para visualizar o relatório de impacto.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" class="rodape-principal">
+        <div class="container">
+            <p>&copy; 2026 AgroForte. Desenvolvido sob os preceitos de ética socioambiental e acessibilidade web.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
